@@ -210,9 +210,7 @@ class HistoryL2:
                     for item in group.get('fields'):
                         key = item.get('title')
                         value = item.get('value')
-
-                        if key in ('Дата поступления', 'Время поступления'):
-                            first_examination_info[key] = value
+                        first_examination_info[key] = value
 
                 elif group.get('pk') == 498:
                     for item in group.get('fields'):
